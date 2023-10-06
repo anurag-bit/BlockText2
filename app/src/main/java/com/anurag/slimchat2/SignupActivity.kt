@@ -25,7 +25,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.anurag.slimchat2.ui.theme.Slimchat2Theme
 
-class LoginActivity : ComponentActivity() {
+class SignupActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -35,16 +35,19 @@ class LoginActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    LoginScreen()
+
                 }
             }
         }
     }
 }
 
+
+
+
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun LoginScreen() {
+fun SignupScreen() {
 
     // Display the UI
     Column(
@@ -65,7 +68,7 @@ fun LoginScreen() {
 
         )
         Text(
-            text = "Login",
+            text = "Sign Up",
             fontWeight = FontWeight.Bold,
             fontSize = 40.sp,
             modifier = Modifier
@@ -88,10 +91,22 @@ fun LoginScreen() {
             TextField(
                 value = "",
                 onValueChange = { },
-                placeholder = { Text("Email address") },
+                placeholder = { Text("Name") },
                 modifier = Modifier
                     .fillMaxWidth()
                     .padding(top = 19.dp)
+                    .fillMaxWidth()
+                    .padding(start = 15.dp)
+                    .fillMaxWidth()
+                    .padding(end = 15.dp)
+            )
+            TextField(
+                value = "",
+                onValueChange = { },
+                placeholder = { Text("Email address") },
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(top = 10.dp)
                     .fillMaxWidth()
                     .padding(start = 15.dp)
                     .fillMaxWidth()
@@ -118,28 +133,19 @@ fun LoginScreen() {
                 .align(Alignment.End)
 
         ) {
-            Text("Login")
-        }
-        Button(
-            onClick = { },
-            modifier = Modifier
-                .padding(top = 10.dp)
-                .padding(bottom = 20.dp)
-
-        ) {
-            Text("Sign up")
+            Text("Sign Up!")
         }
 
     }
 
 
 }
-
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview2() {
+fun GreetingPreview3() {
     Slimchat2Theme {
-        LoginScreen()
+        SignupScreen()
     }
 }
+

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "196714659338",
+    "project_id": "blocktext2",
+    "storage_bucket": "blocktext2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196714659338:android:23f3cc0772288efb5a29f3",
+        "android_client_info": {
+          "package_name": "com.anurag.slimchat2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf0n0bx-4zpK9C6yzFf28QE0UImW9Fyvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
