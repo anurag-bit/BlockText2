@@ -30,7 +30,7 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun Main() {
-
+//implement the navigation bar and the defualt home activity for user!
 }
 
 @Preview(showBackground = true)
