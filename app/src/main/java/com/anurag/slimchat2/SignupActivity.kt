@@ -42,9 +42,6 @@ class SignupActivity : ComponentActivity() {
 }
 
 
-
-
-
 @Composable
 fun SignupScreen() {
 
@@ -57,13 +54,13 @@ fun SignupScreen() {
         verticalArrangement = Arrangement.Center,
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
+        //Column scope has an image object to display  Logo!
         Image(
             painter = painterResource(R.drawable.untitled__2_),
             contentDescription = "App logo",
             modifier = Modifier
                 .padding(bottom = 10.dp)
                 .padding(top = 0.dp)
-
 
         )
         Text(
@@ -76,7 +73,6 @@ fun SignupScreen() {
                 .padding(start = 15.dp)
                 .align(Alignment.Start)
 
-
         )
         Column(
             modifier = Modifier
@@ -86,7 +82,7 @@ fun SignupScreen() {
 
         ) {
 
-
+//text fields for input of username and password
             TextField(
                 value = "",
                 onValueChange = { },
